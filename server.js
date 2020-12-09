@@ -1,7 +1,7 @@
 const dbd = require("dbd.js")
  
 const bot = new dbd.Bot({
-token: "TOKEN, 
+token: process.env.TOKEN, 
 prefix: "h!" 
 })
 bot.onMessage()
@@ -9,7 +9,7 @@ bot.onMessage()
 
 
 bot.status({
-  text: "h!help | $pingms | https://discord.gg/6Zmx9QAeEf",
+  text: "$pingms | https://discord.gg/6Zmx9QAeEf",
   type: "PLAYING",
   time: 12
 });
